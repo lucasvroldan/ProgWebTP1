@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <title>Modulo Alumno</title>
+</head>
+
+<body>
+    <div class="sidebar">
+      <a href="ModuloAlumnos.html" >Página Principal</a>
+      <a href="Alumnos.html" class="selected">Alumnos</a>
+      
+    </div>
+    <div class="main">
+      <div class="header">
+        <h2>Alumnos</h2>
+        
+      </div>
+      <div class="search">      
+     <button onclick="location.href='AgregarAlumnos.html'">Agregar</button>
+      </div>
+      <br>
+      <div class="content">
+        <!-- Contenido -->
+        
+            <div>
+              <input type="text" placeholder="Ingrese un Nombre/Legajo/Apelido..." style="width: 80%;">
+              <button>Buscar</button>
+            </div>
+
+            <br>
+            <table>
+              <thead>
+                <tr>
+                  <th>Legajo</th>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                </tr>
+              </thead>
+              <tbody id="studentTableBody">
+                <!-- Aquí se agregarán las filas de alumnos dinámicamente -->
+              </tbody>
+            </table>
+            <div class="bottoms"  style="text-align: right;">
+              <select>
+                <option>5 por página</option>
+                <option>10 por página</option>
+              </select>
+              <button id="back">Anterior</button>
+              <button id="next">Siguiente</button>
+            
+          </div>
+         
+        </div>
+          
+      </div>
+    </div>
+    <script src="script_TP1.js"></script>
+</body>
+</html>
